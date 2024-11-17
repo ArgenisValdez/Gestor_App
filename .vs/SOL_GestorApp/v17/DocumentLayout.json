@@ -1,0 +1,91 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|c:\\users\\admin\\desktop\\proyectos en git\\gestor_app\\sol_gestorapp\\gestorapp\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|solutionrelative:gestorapp\\datos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|c:\\users\\admin\\desktop\\proyectos en git\\gestor_app\\sol_gestorapp\\gestorapp\\presentacion\\formconectar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|solutionrelative:gestorapp\\presentacion\\formconectar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|c:\\users\\admin\\desktop\\proyectos en git\\gestor_app\\sol_gestorapp\\gestorapp\\presentacion\\formconectar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|solutionrelative:gestorapp\\presentacion\\formconectar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|c:\\users\\admin\\desktop\\proyectos en git\\gestor_app\\sol_gestorapp\\gestorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEE164D8-47CE-4576-AD83-F03DAD4FE2C2}|GestorApp\\GestorApp.csproj|solutionrelative:gestorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Program.cs",
+              "RelativeDocumentMoniker": "GestorApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Program.cs",
+              "RelativeToolTip": "GestorApp\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:53:28.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormConectar.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Presentacion\\FormConectar.cs",
+              "RelativeDocumentMoniker": "GestorApp\\Presentacion\\FormConectar.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Presentacion\\FormConectar.cs",
+              "RelativeToolTip": "GestorApp\\Presentacion\\FormConectar.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:44:57.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormConectar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Presentacion\\FormConectar.cs",
+              "RelativeDocumentMoniker": "GestorApp\\Presentacion\\FormConectar.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Presentacion\\FormConectar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "GestorApp\\Presentacion\\FormConectar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T17:16:42.783Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Datos\\Conexion.cs",
+              "RelativeDocumentMoniker": "GestorApp\\Datos\\Conexion.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Proyectos en Git\\Gestor_App\\SOL_GestorApp\\GestorApp\\Datos\\Conexion.cs",
+              "RelativeToolTip": "GestorApp\\Datos\\Conexion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T04:20:47.368Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

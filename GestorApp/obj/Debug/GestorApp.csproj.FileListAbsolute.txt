@@ -1,0 +1,10 @@
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\bin\Debug\GestorApp.exe.config
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\bin\Debug\GestorApp.exe
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\bin\Debug\GestorApp.pdb
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.Presentacion.FormConectar.resources
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.Properties.Resources.resources
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.exe
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.pdb
