@@ -17,7 +17,7 @@ namespace GestorApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormConectar());
+            Application.Run(new FormEmpleados());
         }
     }
 }

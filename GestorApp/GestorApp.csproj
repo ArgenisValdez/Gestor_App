@@ -53,10 +53,19 @@
     <Compile Include="Presentacion\FormConectar.Designer.cs">
       <DependentUpon>FormConectar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\FormEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\FormEmpleados.Designer.cs">
+      <DependentUpon>FormEmpleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Presentacion\FormConectar.resx">
       <DependentUpon>FormConectar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\FormEmpleados.resx">
+      <DependentUpon>FormEmpleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -8,3 +8,4 @@ C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\D
 C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.exe
 C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.pdb
+C:\Users\Admin\Desktop\Proyectos en Git\Gestor_App\SOL_GestorApp\GestorApp\obj\Debug\GestorApp.Presentacion.FormEmpleados.resources
