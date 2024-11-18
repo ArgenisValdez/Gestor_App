@@ -18,6 +18,11 @@ namespace GestorApp.Presentacion
             InitializeComponent();
         }
 
+        #region "Variables"
+        int iCodigoEmpleado = 0;
+        #endregion
+
+
         #region"Metodos"
 
         private void CargarEmpleados(string cBusqueda)
@@ -55,6 +60,61 @@ namespace GestorApp.Presentacion
             cmbCargo.DisplayMember = "nombre_cargo";
             cmbCargo.SelectedIndex = -1;
         }
+
+        private void ActivarTextos(bool bEstado)
+        {
+            txtNombre.Enabled = bEstado;
+            txtDireccion.Enabled = bEstado;
+            txtTelefono.Enabled = bEstado;
+            txtSalario.Enabled = bEstado;
+            cmbDepartamento.Enabled = bEstado;
+            cmbCargo.Enabled = bEstado;
+            dtpFechaNacimiento.Enabled = bEstado;
+
+            txtBuscar.Enabled = !bEstado;
+        }
+
+        private void ActivarBotones(bool bEstado)
+        {
+            btnNuevo.Enabled = bEstado;
+            btnActualizar.Enabled = bEstado;
+            btnEliminar.Enabled = bEstado;
+            btnReporte.Enabled = bEstado;
+
+            btnGuardar.Visible = !bEstado;
+            btnCancelar.Visible = !bEstado;
+        }
+
+        private void SeleccionarEmpleado()
+        {
+            iCodigoEmpleado = Convert.ToInt32(dgvLista.CurrentRow.Cells["ID"].Value);
+
+            txtNombre.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Nombre"].Value);
+            txtDireccion.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Dirección"].Value);
+            txtTelefono.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Teléfono"].Value);
+            txtSalario.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Salario"].Value);
+            cmbDepartamento.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Departamento"].Value);
+            cmbCargo.Text = Convert.ToString(dgvLista.CurrentRow.Cells["Cargo"].Value);
+            dtpFechaNacimiento.Value = Convert.ToDateTime(dgvLista.CurrentRow.Cells["Fecha Nacimiento"].Value);
+        }
+
+        private void Limpiar() 
+        {
+            txtNombre.Clear();
+            txtDireccion.Clear();
+            txtTelefono.Clear();
+            txtSalario.Clear();
+            txtBuscar.Clear();
+
+            cmbDepartamento.SelectedIndex = -1;
+            cmbCargo.SelectedIndex = -1;
+
+            dtpFechaNacimiento.Value = DateTime.Now;
+
+            iCodigoEmpleado = 0;
+        }
+
+
         #endregion
 
         private void FormEmpleados_Load(object sender, EventArgs e)
@@ -64,59 +124,47 @@ namespace GestorApp.Presentacion
             CargarCargos();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             CargarEmpleados(txtBuscar.Text);
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            ActivarTextos(true);
+            ActivarBotones(false);
+            Limpiar();
+
+            txtNombre.Select();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            ActivarTextos(false);
+            ActivarBotones(true);
+
+            Limpiar();
+        }
+
+        private void dgvLista_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SeleccionarEmpleado();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if(iCodigoEmpleado == 0)
+            {
+                MessageBox.Show("Selecciona un Registro", "Sistema de Gestion de Empleado", MessageBoxButtons.OK, 
+                                MessageBoxIcon.Warning);
+            }
+            else
+            {
+                ActivarTextos(true);
+                ActivarBotones(false);
+
+                txtNombre.Select();
+            }
         }
     }
 }

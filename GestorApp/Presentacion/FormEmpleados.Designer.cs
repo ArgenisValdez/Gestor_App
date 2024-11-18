@@ -94,13 +94,14 @@
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.Red;
+            this.btnSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalir.FlatAppearance.BorderSize = 0;
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = ((System.Drawing.Image)(resources.GetObject("btnSalir.Image")));
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalir.Location = new System.Drawing.Point(17, 464);
+            this.btnSalir.Location = new System.Drawing.Point(17, 525);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.btnSalir.Size = new System.Drawing.Size(158, 64);
@@ -112,13 +113,14 @@
             // btnReporte
             // 
             this.btnReporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.btnReporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReporte.FlatAppearance.BorderSize = 0;
             this.btnReporte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReporte.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReporte.ForeColor = System.Drawing.Color.White;
             this.btnReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnReporte.Image")));
             this.btnReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnReporte.Location = new System.Drawing.Point(17, 336);
+            this.btnReporte.Location = new System.Drawing.Point(17, 351);
             this.btnReporte.Name = "btnReporte";
             this.btnReporte.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.btnReporte.Size = new System.Drawing.Size(158, 64);
@@ -130,13 +132,14 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.Location = new System.Drawing.Point(17, 263);
+            this.btnEliminar.Location = new System.Drawing.Point(17, 278);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.btnEliminar.Size = new System.Drawing.Size(158, 64);
@@ -148,13 +151,14 @@
             // btnActualizar
             // 
             this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnActualizar.FlatAppearance.BorderSize = 0;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.White;
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnActualizar.Location = new System.Drawing.Point(17, 190);
+            this.btnActualizar.Location = new System.Drawing.Point(17, 205);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.btnActualizar.Size = new System.Drawing.Size(158, 64);
@@ -162,17 +166,19 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.ForeColor = System.Drawing.Color.White;
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevo.Location = new System.Drawing.Point(17, 117);
+            this.btnNuevo.Location = new System.Drawing.Point(17, 132);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Padding = new System.Windows.Forms.Padding(0, 0, 10, 0);
             this.btnNuevo.Size = new System.Drawing.Size(158, 64);
@@ -180,6 +186,7 @@
             this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel2
             // 
@@ -191,7 +198,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(818, 102);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox1
             // 
@@ -213,7 +219,6 @@
             this.label1.Size = new System.Drawing.Size(531, 68);
             this.label1.TabIndex = 0;
             this.label1.Text = "Gestión de Empleados";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -264,7 +269,6 @@
             this.label6.Size = new System.Drawing.Size(78, 21);
             this.label6.TabIndex = 6;
             this.label6.Text = "Salario: ";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -285,7 +289,6 @@
             this.label8.Size = new System.Drawing.Size(66, 21);
             this.label8.TabIndex = 8;
             this.label8.Text = "Cargo: ";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
             // 
@@ -296,10 +299,10 @@
             this.label9.Size = new System.Drawing.Size(76, 21);
             this.label9.TabIndex = 9;
             this.label9.Text = "Buscar: ";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // txtNombre
             // 
+            this.txtNombre.Enabled = false;
             this.txtNombre.Location = new System.Drawing.Point(145, 127);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(265, 30);
@@ -307,6 +310,7 @@
             // 
             // dtpFechaNacimiento
             // 
+            this.dtpFechaNacimiento.Enabled = false;
             this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFechaNacimiento.Location = new System.Drawing.Point(644, 127);
             this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
@@ -315,6 +319,7 @@
             // 
             // txtDireccion
             // 
+            this.txtDireccion.Enabled = false;
             this.txtDireccion.Location = new System.Drawing.Point(145, 175);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(652, 30);
@@ -322,6 +327,7 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.Enabled = false;
             this.txtTelefono.Location = new System.Drawing.Point(145, 225);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(209, 30);
@@ -329,6 +335,7 @@
             // 
             // txtSalario
             // 
+            this.txtSalario.Enabled = false;
             this.txtSalario.Location = new System.Drawing.Point(534, 224);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(263, 30);
@@ -337,6 +344,7 @@
             // cmbDepartamento
             // 
             this.cmbDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbDepartamento.Enabled = false;
             this.cmbDepartamento.FormattingEnabled = true;
             this.cmbDepartamento.Location = new System.Drawing.Point(145, 283);
             this.cmbDepartamento.Name = "cmbDepartamento";
@@ -346,6 +354,7 @@
             // cmbCargo
             // 
             this.cmbCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCargo.Enabled = false;
             this.cmbCargo.FormattingEnabled = true;
             this.cmbCargo.Location = new System.Drawing.Point(534, 278);
             this.cmbCargo.Name = "cmbCargo";
@@ -370,7 +379,7 @@
             this.dgvLista.ReadOnly = true;
             this.dgvLista.Size = new System.Drawing.Size(785, 219);
             this.dgvLista.TabIndex = 18;
-            this.dgvLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvLista.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellClick);
             // 
             // btnBuscar
             // 
@@ -391,6 +400,7 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.Red;
+            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -405,10 +415,13 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Visible = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(132)))), ((int)(((byte)(197)))));
+            this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -423,6 +436,7 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Visible = false;
             // 
             // FormEmpleados
             // 
@@ -451,6 +465,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(5);
