@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestorApp.Datos;
 using GestorApp.Entidades;
+using GestorApp.Presentacion.Reportes;
 
 namespace GestorApp.Presentacion
 {
@@ -315,6 +316,18 @@ namespace GestorApp.Presentacion
                 }
 
             }
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            FormReporteEmpleados formReporteEmpleados = new FormReporteEmpleados();
+            formReporteEmpleados.textFiltrar.Text = txtBuscar.Text;
+            formReporteEmpleados.ShowDialog();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+           Application.Exit();
         }
     }
 }
