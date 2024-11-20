@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using GestorApp.Datos;
+using GestorApp.Entidades;
 
 namespace GestorApp.Presentacion
 {
@@ -20,6 +21,7 @@ namespace GestorApp.Presentacion
 
         #region "Variables"
         int iCodigoEmpleado = 0;
+        bool bEstadoGuardar = true;
         #endregion
 
 
@@ -114,6 +116,106 @@ namespace GestorApp.Presentacion
             iCodigoEmpleado = 0;
         }
 
+        private void GuardarEmpleado()
+        {
+            E_Empleado Empleado = new E_Empleado();
+
+            Empleado.Nombre_Empleado = txtNombre.Text;
+            Empleado.Direccion_Empleado = txtDireccion.Text;
+            Empleado.Telefono_Empleado = txtTelefono.Text;
+            Empleado.Salario_Empleado = Convert.ToDecimal(txtSalario.Text);
+            Empleado.Fecha_Nacimiento = dtpFechaNacimiento.Value;
+            Empleado.ID_Departamento = Convert.ToInt32(cmbDepartamento.SelectedValue);
+            Empleado.ID_Cargo = Convert.ToInt32(cmbCargo.SelectedValue);
+
+            D_Empleados Datos = new D_Empleados();
+            string respuesta = Datos.Guardar_Empleado(Empleado);
+
+            if (respuesta == "OK")
+            {
+                CargarEmpleados("%");
+                Limpiar();
+                ActivarTextos(false);
+                ActivarBotones(true);
+
+                MessageBox.Show("Datos Guardados Correctamente!", "Sistema Gestion de Empleados", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(respuesta, "Sistema Gestion de Empleados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private bool validarTextos()
+        {
+            bool hayTextosVacios = false;
+
+            if (string.IsNullOrEmpty(txtNombre.Text)) hayTextosVacios = true;
+            if (string.IsNullOrEmpty(txtTelefono.Text)) hayTextosVacios = true;
+            if (string.IsNullOrEmpty(txtSalario.Text)) hayTextosVacios = true;
+
+            return hayTextosVacios;
+        }
+
+        private void ActualizarEmpleado()
+        {
+            E_Empleado Empleado = new E_Empleado();
+
+            Empleado.ID_Empleado = iCodigoEmpleado;
+            Empleado.Nombre_Empleado = txtNombre.Text;
+            Empleado.Direccion_Empleado = txtDireccion.Text;
+            Empleado.Telefono_Empleado = txtTelefono.Text;
+            Empleado.Salario_Empleado = Convert.ToDecimal(txtSalario.Text);
+            Empleado.Fecha_Nacimiento = dtpFechaNacimiento.Value;
+            Empleado.ID_Departamento = Convert.ToInt32(cmbDepartamento.SelectedValue);
+            Empleado.ID_Cargo = Convert.ToInt32(cmbCargo.SelectedValue);
+
+            D_Empleados Datos = new D_Empleados();
+            string respuesta = Datos.Actualizar_Empleado(Empleado);
+
+            if (respuesta == "OK")
+            {
+                CargarEmpleados("%");
+                Limpiar();
+                ActivarTextos(false);
+                ActivarBotones(true);
+
+                MessageBox.Show("Datos Actualizados Correctamente!", "Sistema Gestion de Empleados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(respuesta, "Sistema Gestion de Empleados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void DesactivarEmpleado(int iCodigoEmpleado)
+        {
+            E_Empleado Empleado = new E_Empleado();
+
+            D_Empleados Datos = new D_Empleados();
+            string respuesta = Datos.Desactivar_Empleado(iCodigoEmpleado);
+
+            if (respuesta == "OK")
+            {
+                CargarEmpleados("%");
+                Limpiar();
+                ActivarTextos(false);
+                ActivarBotones(true);
+
+                MessageBox.Show("Registro Eliminado Correctamente!", "Sistema Gestion de Empleados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show(respuesta, "Sistema Gestion de Empleados",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
 
         #endregion
 
@@ -131,6 +233,9 @@ namespace GestorApp.Presentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            bEstadoGuardar = true;
+            iCodigoEmpleado = 0;
+
             ActivarTextos(true);
             ActivarBotones(false);
             Limpiar();
@@ -140,6 +245,9 @@ namespace GestorApp.Presentacion
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            bEstadoGuardar=true;
+            iCodigoEmpleado= 0;
+
             ActivarTextos(false);
             ActivarBotones(true);
 
@@ -160,10 +268,52 @@ namespace GestorApp.Presentacion
             }
             else
             {
+                bEstadoGuardar = false;
+
                 ActivarTextos(true);
                 ActivarBotones(false);
 
                 txtNombre.Select();
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if (validarTextos())
+            {
+                MessageBox.Show("Hay campos vacios, debes llenar todos los campos (*) obligatorios", 
+                    "Sistema Gestion de Empleados", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if(bEstadoGuardar)
+                { 
+                    GuardarEmpleado(); 
+                }
+                else
+                {
+                    ActualizarEmpleado();
+                }
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (iCodigoEmpleado == 0)
+            {
+                MessageBox.Show("Selecciona un Registro", "Sistema de Gestion de Empleado", MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            }
+            else
+            {
+                DialogResult resultado = MessageBox.Show("Esta seguro de eliminar este registro?", "Sistema de Gestion de Empleado",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    DesactivarEmpleado(iCodigoEmpleado);
+                }
+
             }
         }
     }
